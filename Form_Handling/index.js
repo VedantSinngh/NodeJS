@@ -14,9 +14,10 @@ app.get('/', (req,res) => {
 
 // jab data bhejte ho to hota hai post request
 app.post('/form-submit', (req,res) => {
+    console.log(req.body);
     res.json({
         message: 'Data received',
-        
+        data: req.body
     })
     });
 
